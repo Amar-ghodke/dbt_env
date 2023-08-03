@@ -22,7 +22,7 @@ EXTERNAL_ID_VOD_C
 ,SYSTEMMODSTAMP
 ,TARGET_C
 ,WEBSITE
-from {{ source('snowflake', 'GOOGLE_SHEETS') }} 
+from {{ source('google_sheets', 'GOOGLE_SHEETS') }} 
 where id is not null and NPI_VOD_C is not null and len(NPI_VOD_C)=10 and CNX_ACCOUNT_STATUS_C='Active')
 select * from Active
 
