@@ -1,8 +1,9 @@
-version: 1
+version: 2
 
 sources:
-  - name: snowflake
-    database: sndbx_db  
+  - name: google_sheets
+    database: sndbx_db
+    freshness: # default freshness  
     schema: google_sheets  
     tables:
       - name: google_sheets
