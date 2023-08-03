@@ -1,10 +1,10 @@
 version: 2
 
 sources:
-  - name: GOOGLE_SHEET
+  - name: GOOGLE_SHEETS
     database: sndbx_db
     freshness: # default freshness  
-    schema: GOOGLE_SHEET  
+    schema: GOOGLE_SHEETS
     tables:
       - name: google_sheets
-      - name: FIVETRAN_AUDIT
+      
