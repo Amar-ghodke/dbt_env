@@ -1,0 +1,20 @@
+[0m11:59:36.548421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F43D0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F4CD31D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F4692650>]}
+
+
+============================== 11:59:36.551974 | d7c21697-f6bd-40e6-a0d0-c8150d86288d ==============================
+[0m11:59:36.551974 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:59:36.551974 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Amarg\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Amarg\\dbt_env\\dbt_project\\dbt_logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:59:38.840952 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m11:59:38.844872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd7c21697-f6bd-40e6-a0d0-c8150d86288d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FF2CADD0>]}
+[0m11:59:38.865558 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['log-path']: ['dbt_logs'] is not valid under any of the given schemas
+
+Error encountered in C:\Users\Amarg\dbt_env\dbt_project\dbt_project.yml
+[0m11:59:38.873571 [debug] [MainThread]: Command `dbt run` failed at 11:59:38.873571 after 2.36 seconds
+[0m11:59:38.873571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F4332310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F4CDD010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F431FE90>]}
+[0m11:59:38.873571 [debug] [MainThread]: Flushing usage events
