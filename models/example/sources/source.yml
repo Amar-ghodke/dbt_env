@@ -6,5 +6,5 @@ sources:
     freshness: # default freshness  
     schema: GOOGLE_SHEETS
     tables:
-      - name: google_sheets
+      - name: GOOGLE_SHEETS
       
