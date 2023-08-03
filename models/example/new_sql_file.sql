@@ -24,7 +24,7 @@ x.EXTERNAL_ID_VOD_C
 ,x.WEBSITE
 from {{ source('GOOGLE_SHEETS', 'GOOGLE_SHEETS') }} X
 where id is not null and NPI_VOD_C is not null and len(NPI_VOD_C)=10 and CNX_ACCOUNT_STATUS_C='Active')
-select * from Active join {{ source('GOOGLE_SHEETS', 'Target') }} Y
+select * from Active left join {{ source('GOOGLE_SHEETS', 'Target') }} Y on Y.npi = X.NPI_VOD_C
 
 /*
     Getting the records from google sheet where id,npi_vod_c is not null and 
