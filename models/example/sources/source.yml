@@ -1,0 +1,9 @@
+version: 1
+
+sources:
+  - name: snowflake
+    database: sndbx_db  
+    schema: google_sheets  
+    tables:
+      - name: google_sheets
+      - name: FIVETRAN_AUDIT
