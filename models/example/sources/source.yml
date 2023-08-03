@@ -7,4 +7,5 @@ sources:
     schema: GOOGLE_SHEETS
     tables:
       - name: GOOGLE_SHEETS
+      - name: Target
       
