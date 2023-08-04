@@ -21,7 +21,7 @@ LASTNAME
 NAME
 NPI_VOD_C
 CREDENTIALS_VOD_C 
-from Active left join {{ source('GOOGLE_SHEETS', 'Target') }} Y on X.NPI_VOD_C = Y.npi
+from Active A left join {{ source('GOOGLE_SHEETS', 'Target') }} Y on A.NPI_VOD_C = Y.NPI
 
 /*
     Getting the records from google sheet where id,npi_vod_c is not null and 
