@@ -14,9 +14,4 @@ sources:
       - name: ACCOUNT
       - name: CALL_DETAIL
 
-  - name: FIVETRAN_WONDERFULLY_HOVERING_STAGING
-    tables:
-      - name: GOOGLESHEET_TO_SNWFLAKE
-      - name: SQL_JOIN
-      - name: NEW_SQL_FILE
       
