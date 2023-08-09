@@ -14,4 +14,4 @@ sources:
     freshness: # default freshness  
     schema: s3
     tables:
-      -name: CALL_DETAIL
+      - name: CALL_DETAIL
