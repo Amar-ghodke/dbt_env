@@ -8,10 +8,4 @@ sources:
     tables:
       - name: GOOGLE_SHEETS
       - name: Target
-
-  - name: S3
-    tables:
-      - name: ACCOUNT
-      - name: CALL_DETAIL
-
       
