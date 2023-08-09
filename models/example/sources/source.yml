@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: GOOGLE_SHEETS
-    warehouse: COMPUTE_WH
+    # warehouse: COMPUTE_WH
     database: sndbx_db
     freshness: # default freshness  
     schema: GOOGLE_SHEETS
@@ -11,7 +11,7 @@ sources:
       - name: Target
       
   - name: s3
-    warehouse: COMPUTE_WH
+    # warehouse: COMPUTE_WH
     database: sndbx_db
     freshness: # default freshness  
     schema: s3
