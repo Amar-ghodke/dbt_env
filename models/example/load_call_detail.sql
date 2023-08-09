@@ -7,4 +7,4 @@ with call_detail as (
 	call_plan as (select * from {{ source('s3','CALL_DETAIL')}} where _file ='AWS_POC_test/CALL_PLAN.csv'),
 	username as (select * from {{ source('s3','CALL_DETAIL')}} where _file ='AWS_POC_test/username.csv')
 
-	select * from call_detail cd join call c on c.call_id=cd.CALL_2_VOD_C
+	select * from call_detail cd join calls c on c.call_id=cd.CALL_2_VOD_C
