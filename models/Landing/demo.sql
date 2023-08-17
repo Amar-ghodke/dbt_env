@@ -1,3 +1,3 @@
 with demo as(
-    select * from ADHOC.DEPARTMENT
+    select * from {{source('ADHOC'.'DEPARTMENT')}}
 )
