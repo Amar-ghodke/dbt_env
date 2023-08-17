@@ -21,5 +21,4 @@ x.EXTERNAL_ID_VOD_C
 ,x.SYSTEMMODSTAMP
 ,x.TARGET_C
 ,x.WEBSITE
-from {{ source('GOOGLE_SHEETS', 'GOOGLE_SHEETS') }} 
-X
+from {{ source('GOOGLE_SHEETS', 'GOOGLE_SHEETS') }} x
