@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ADHOC
+    # warehouse: COMPUTE_WH
+    database: sndbx_db
+    freshness: # default freshness
+    schema: Adhoc
+    tables:
+      - name: DEPARTMENT
+      - name: MANAGER
+      - name: EMPLOYEE
