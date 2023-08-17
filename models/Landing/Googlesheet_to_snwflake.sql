@@ -28,5 +28,5 @@ select * from Active
 
 /*
     Getting the records from google sheet where id,npi_vod_c is not null and 
-    lenght of npi is 10 alsoit will give the records which are active.
+    lenght of npi is 10 also it will give the records which are active.
 */
