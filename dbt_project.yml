@@ -35,5 +35,4 @@ models:
       +materialized: view
     Stage:
       +materialized: table
-    Sources:
       
