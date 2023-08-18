@@ -1,10 +1,8 @@
 with emp as(
-    select EMPLOYEEID, EMPLOYEENAME, DEPARTMENTID, MANAGERID
-    from {{source('ADHOC','EMPLOYEE')}}
+    select 
+    *
+    from {{ref('employee_detail')}}
 
-),
-dep as(
-
-    selcet DEPARTMENTID, DEPARTMENTNAME from {{source('ADHOC','DEPARTMENT')}}
 )
-select * from emp e join dep d on e.DEPARTMENTID = d.DEPARTMENTID
+
+    select * from emp;
