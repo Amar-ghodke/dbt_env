@@ -1,4 +1,3 @@
--- use warehouse COMPUTE_WH;
 
 with call_detail as (
 	select CALL_2_VOD_C,CREATEDBYID,CREATEDDATE,id from {{ source('s3','CALL_DETAIL')}} where _file ='AWS_POC_test/CALL_DETAIL.csv'),
