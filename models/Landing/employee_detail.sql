@@ -10,5 +10,5 @@ EMP AS (
 
     select * from {{source('ADHOC','EMPLOYEE')}}
 )
-select *,e.DEPARTMENTID as deptid,d.DEPARTMENTID as dept_id from emp e join dep d on e.DEPARTMENTID = d.DEPARTMENTID
+select EMPLOYEEID,EMPLOYEENAME,d.DEPARTMENTID,m.MANAGERID from emp e join dep d on e.DEPARTMENTID = d.DEPARTMENTID
 join man m on m.MANAGERID = e.MANAGERID
