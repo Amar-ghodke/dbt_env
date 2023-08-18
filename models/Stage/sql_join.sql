@@ -1,30 +1,7 @@
 with
     active as (
         select
-            x.external_id_vod_c,
-            x.id,
-            x.recordtypeid,
-            x.firstname,
-            x.middle_vod_c,
-            x.lastname,
-            x.name,
-            x.npi_vod_c,
-            x.credentials_vod_c,
-            x.personemail,
-            x.gender_vod_c,
-            x.account_identifier_vod_c,
-            x.fax,
-            x.me_c,
-            x.phone,
-            x.primary_parent_vod_c,
-            x.salutation,
-            -- ,SPECIALTY_2_VOD_C
-            x.suffix_vod_c,
-            x.systemmodstamp,
-            x.target_c,
-            x.website
-        from {{ source("GOOGLE_SHEETS", "GOOGLE_SHEETS") }} x
-        where id is not null and npi_vod_c is not null and len(npi_vod_c) = 10
+            * FROM {{ref('Googlesheet_to_snwflake')}}
     )
 select
     external_id_vod_c,
