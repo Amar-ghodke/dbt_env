@@ -1,7 +1,7 @@
 with
     active as (
         select
-            * FROM {{REF('googlesheet_to_snwflake')}}
+            * FROM {{ref('Googlesheet_to_snwflake')}}
     )
 select
     external_id_vod_c,
