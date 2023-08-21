@@ -2,26 +2,21 @@
 version: 2
 
 models:
-  
+
   - name: Googlesheet_to_snwflake
     description: "A google sheet loaded into snowflake from dbt model"
   - name: employee_detail
     description: "A starter dbt model"
-  - name: load_call_detail
-    description: "A starter dbt model"
-    columns:
-        tests:
-          - unique
   - name: EMP_DEP
     description: "A starter dbt model"
   - name: sql_join
 
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
+  # - name: my_second_dbt_model
+  #   description: "A starter dbt model"
+  #   columns:
+  #     - name: id
+  #       description: "The primary key for this table"
+  #       tests:
+  #         - unique
           
