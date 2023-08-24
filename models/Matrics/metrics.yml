@@ -4,4 +4,4 @@ metrics:
     label: employees
     type: simple
     type_params:
-      measure: employee
+      measure: employee_total

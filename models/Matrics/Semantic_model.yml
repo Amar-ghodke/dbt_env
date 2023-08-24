@@ -12,20 +12,21 @@ semantic_models:
       - name: deptid
         type: foreign
         expr: DEPTID
+      - name: mng_id
+        type: natural
+        expr: MNG_ID
 
     dimensions: # dimensions are qualitative values such as names, dates, or geographical data. They provide context to metrics and allow "metric by group" data slicing.
-      - name: transaction_date
-        type: time
-        type_params:
-          time_granularity: day
-
-      - name: transaction_location
+      - name: deptid
         type: categorical
-        expr: order_country
+        
+      - name: mng_id
+        type: categorical
+        expr: mng_id
 
     measures: # Measures are columns we perform an aggregation over. Measures are inputs to metrics.
-      - name: transaction_total
-        description: "The total value of the transaction."
+      - name: employee_total
+        description: "The total no of the employee."
         agg: sum
 
       - name: sales
