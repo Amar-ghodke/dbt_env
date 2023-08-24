@@ -27,7 +27,7 @@ semantic_models:
     measures: # Measures are columns we perform an aggregation over. Measures are inputs to metrics.
       - name: employee_total
         description: "The total no of the employee."
-        agg: sum
+        agg: count
 
       - name: sales
         description: "The total sale of the transaction."
