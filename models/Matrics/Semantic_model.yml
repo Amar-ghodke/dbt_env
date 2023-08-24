@@ -3,7 +3,7 @@ semantic_models:
     model: ref('EMP_DEP') # References the dbt model named `fact_transactions`
     description: "EMP_DEP table contains all the data of employee, dept and managers."
     defaults:
-      agg_time_dimension: none
+      agg_time_dimension: DEPTID
 
     entities: # Entities included in the table are defined here. MetricFlow will use these columns as join keys.
       - name: employeeid
