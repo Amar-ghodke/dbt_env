@@ -1,0 +1,7 @@
+metrics:
+  - name: employees
+    description: No of employee in dept.
+    label: employees
+    type: simple
+    type_params:
+      measure: employee
